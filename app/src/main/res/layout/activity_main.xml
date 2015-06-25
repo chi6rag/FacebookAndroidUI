@@ -24,13 +24,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logoFacebook"
         android:layout_alignParentLeft="true"
-        style="@style/standardFont" />
+        style="@style/labelFont" />
 
     <EditText
         android:id="@+id/inputEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/labelEmail" />
+        android:layout_below="@id/labelEmail"
+        style="@style/loginInput" />
 
     <TextView
         android:id="@+id/labelPassword"
@@ -39,22 +40,31 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/inputEmail"
         android:layout_alignParentLeft="true"
-        style="@style/standardFont" />
+        style="@style/labelFont" />
 
     <EditText
         android:id="@+id/inputPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/labelPassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        style="@style/loginInput" />
 
     <CheckBox
+        android:id="@+id/rememberMe"
         android:text="@string/rememberMe"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_below="@id/inputPassword"
         android:layout_alignParentLeft="true"
         style="@style/standardFont" />
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rememberMe"
+        style="@style/loginButton" />
 
     <TextView
         android:id="@+id/signUp"
@@ -66,6 +76,6 @@
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:textSize="17sp"
-        style="@style/standardFont" />
+        style="@style/signUpFont" />
 
 </RelativeLayout>
