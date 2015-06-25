@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FacebookAndroidUI</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="logoFacebook">facebook</string>
+    <string name="labelEmail">Email</string>
+    <string name="labelPassword">Password</string>
+    <string name="needAnAccount">Need An Account?</string>
+    <string name="rememberMe">Remember me</string>
+    <string name="signUp">Need an Account? \n Sign up using your phone</string>
+</resources>

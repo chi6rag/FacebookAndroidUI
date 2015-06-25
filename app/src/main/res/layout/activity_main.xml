@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#3A5795" >
+
+    <TextView
+        android:text="@string/logoFacebook"
+        android:id="@+id/logoFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        style="@style/facebookLogo" />
+
+    <TextView
+        android:id="@+id/labelEmail"
+        android:text="@string/labelEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoFacebook"
+        android:layout_alignParentLeft="true"
+        style="@style/standardFont" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelEmail" />
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:text="@string/labelPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputEmail"
+        android:layout_alignParentLeft="true"
+        style="@style/standardFont" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelPassword"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:text="@string/rememberMe"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/inputPassword"
+        android:layout_alignParentLeft="true"
+        style="@style/standardFont" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:text="@string/signUp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="17sp"
+        style="@style/standardFont" />
+
+</RelativeLayout>
